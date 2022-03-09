@@ -39,7 +39,7 @@ class Server {
   }
   listen() {
     this.app.listen(this.port, () => {
-      console.log("Servidor corriendo http://localhost:8080", this.port);
+      console.log("Servidor corriendo https://localhost:8080", this.port);
     });
   }
 }

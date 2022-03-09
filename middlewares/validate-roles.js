@@ -9,14 +9,12 @@ const isAdminRole=(req,res=response,next)=>{
     const {role,name}=req.user;
     if (role!=='ADMIN_ROLE') {
         return res.status(401).json({
-            msgname:`${name} is not admin -Can not do it`
+            msg:`${name} is not admin -Can not do it`
         });
         
-        next();
+   
     }
 
-
-    
     next();
 }
 const tieneRole=(...roles)=>{
