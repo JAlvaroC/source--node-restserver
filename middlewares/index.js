@@ -6,3 +6,5 @@ module.exports={
     ...validateJWT,
     ...validateRoles,
 }
+//ctrl+? isquierda
+//ctrl +¿derecha
