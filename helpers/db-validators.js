@@ -36,10 +36,19 @@ const productExistsById=async(id)=>{
   }
   // console.log('LLega')
 }
+
+const colectionAllowed=(collection='',collections=[])=>{
+  const included=collections.includes(collection)
+  if (!included) {
+    throw new Error(`The colection ${collection} is not allowed,${collections}`)
+  }
+  return true
+}
 module.exports = {
   isRoleValid,
   emailExiste,
   userExistsById,
   categorieExistsById,
-  productExistsById
+  productExistsById,
+  colectionAllowed
 };

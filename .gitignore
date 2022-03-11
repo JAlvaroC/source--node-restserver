@@ -1,3 +1,5 @@
 node_modules/
 POSTMAN/
 .env
+uploads/products/**.*
+uploads/users/**.*
