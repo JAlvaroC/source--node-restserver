@@ -10,7 +10,7 @@ const validateJWT=async(req=request,res=response,next)=>{
         });
     }
     try {
-        const {uid}=jwt.verify(token,process.env.SECRETORPRIIVATEKEY)
+        const {uid}=jwt.verify(token,process.env.SECRETORPRIVATEKEY)
         // console.log(payload)
         const user=await User.findById(uid);
         if (!user) {
